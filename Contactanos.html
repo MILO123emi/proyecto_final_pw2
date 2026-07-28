@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/contactanos.js" defer></script>
+</head>
+
+<body>
+
+<input type="checkbox" id="menu-toggle">
+
+<header>
+    <div class="logo">
+        <a href="Index.html">
+            <img class="logotipo" src="IMAGENES/logo.jpeg" alt="Logo">
+        </a>
+        <h1>INSTITUTO DESARROLLO SOSTENIBLE</h1>
+
+        <label for="menu-toggle" class="hamburger-buttons">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </div>
+</header>
+
+<nav>
+    <a href="Index.html">Inicio</a>
+    <a href="Nosotros.html">Acerca de Nosotros</a>
+    <a href="Programas.html">Programas</a>
+    <a href="Ayuda.html">Ayudar</a>
+    <a href="Contactanos.html">Contacto</a>
+    <a href="Donaciones.html">Donaciones</a>
+    <a href="Eventos.html">Eventos</a>
+    <a href="Blog.html">Nuestro Blog</a>
+    <a href="Galleria.html">Galeria</a>
+    <a href="FAQ.html">Preguntas frecuentes</a>
+</nav>
+
+<div class="main-titulo">
+    <h2>Contáctanos</h2>
+    <p>
+        Si deseas comunicarte con el Instituto Gubernamental Desarrollo Sostenible “El Hábitat”,
+        puedes hacerlo a través de nuestras oficinas, correo electrónico o número de teléfono.
+    </p>    
+</div>
+
+<div class="container">
+
+    <form id="donacionesForm" class="donaciones-box" method="GET" autocomplete="on" novalidate>
+        <h2>Envíanos un mensaje</h2>
+
+        <input type="text" placeholder="Nombre Completo" id="name" name="name">
+        <div id="nombreError" class="error-text"></div>
+
+        <input type="email" placeholder="Correo" id="email" name="email">
+        <div id="emailError" class="error-text"></div>
+
+        <textarea class="mensaje-box" placeholder="Mensaje" id="mensaje" name="mensaje"></textarea>
+        <div id="mensajeError" class="error-text"></div>
+
+        <button type="submit" id="btnEnviar">Enviar</button>
+        <p id="mensaje-mandado"></p>
+    </form>
+
+</div>
+
+<footer>© 2026 Instituto Gubernamental Desarrollo Sostenible</footer>
+<script src="js/App.js"></script>
+</body>
+</html>

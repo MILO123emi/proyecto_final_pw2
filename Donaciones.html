@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donaciones</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/donaciones.js"></script>
+</head>
+<body>
+
+<input type="checkbox" id="menu-toggle">
+
+<header>
+    <div class="logo">
+        <a href="Index.html">
+            <img class="logotipo" src="IMAGENES/logo.jpeg" alt="Logo">
+        </a>
+        <h1>INSTITUTO DESARROLLO SOSTENIBLE</h1>
+
+        <label for="menu-toggle" class="hamburger-buttons">
+            <div></div>
+            <div></div>
+            <div></div>
+        </label>
+    </div>
+</header>
+
+<nav>
+    <a href="Index.html">Inicio</a>
+    <a href="Nosotros.html">Acerca de Nosotros</a>
+    <a href="Programas.html">Programas</a>
+    <a href="Ayuda.html">Ayudar</a>
+    <a href="Contactanos.html">Contacto</a>
+    <a href="Donaciones.html">Donaciones</a>
+    <a href="Eventos.html">Eventos</a>
+    <a href="Blog.html">Nuestro Blog</a>
+    <a href="Galleria.html">Galeria</a>
+    <a href="FAQ.html">Preguntas frecuentes</a>
+</nav>
+
+<div class="main-titulo">
+    <h2>Donaciones</h2>
+    <p>
+        Apoya al Instituto Gubernamental Desarrollo Sostenible “El Hábitat” M.D.C.
+        mediante donaciones que contribuyen al desarrollo educativo, ambiental y social
+        de nuestros estudiantes.
+    </p>    
+</div>
+
+<div class="container">
+    <form id="donacionesForm" class="donaciones-box" method="GET" autocomplete="on">
+        <h2>Apoya nuestra causa</h2>
+
+        <div id="montosContainer" class="montos">
+            <button type="button" data-monto="100">L100</button>
+            <button type="button" data-monto="300">L300</button>
+            <button type="button" data-monto="500">L500</button>
+            <button type="button" data-monto="1000">L1000</button>
+        </div>
+
+        <input type="text" id="monto" name="monto" placeholder="Otro monto">
+
+        <div id="montoError"></div>
+
+        <select id="donaciones-metodo" name="metodo">
+            <option value="">Selecciona método de pago</option>
+            <option value="card">Tarjeta de crédito</option>
+            <option value="paypal">PayPal</option>
+        </select>
+
+        <div id="metodoError"></div>
+
+        <!-- CARD -->
+        <div id="cardFields" class="payment-fields" style="display:none;">
+            <input id="cardNumber" type="text" placeholder="Número de tarjeta">
+            <input id="cardName" type="text" placeholder="Nombre en la tarjeta">
+            <input id="cardExpiry" type="text" placeholder="MM/AA">
+            <input id="cardCVV" type="text" placeholder="CVV">
+        </div>
+
+        <!-- PAYPAL -->
+        <div id="paypalFields" class="payment-fields" style="display:none;">
+            <input id="paypalEmail" name="email" type="email" placeholder="Correo de PayPal" autocomplete="email">
+        </div>
+
+        <button type="submit" id="btnDonar">Donar ahora</button>
+
+        <p id="donaciones-mensaje"></p>
+    </form>
+</div>
+<footer>© 2026 Instituto Gubernamental Desarrollo Sostenible</footer>
+<script src="js/App.js"></script>
+</body>
+</html>

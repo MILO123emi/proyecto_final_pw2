@@ -1,0 +1,539 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f4f4;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    line-height: 1.7;
+}
+
+header {
+    background: #060955;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*CONTENEDOR ADENTRO DEL HEADER*/
+.logo {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: relative;
+}
+
+/*LOGO*/
+.logotipo {
+    width: 100px;
+    border-radius: 100%;
+    margin-right: auto;
+}
+
+/*TITULO*/
+.logo h1 {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    text-align: center;
+}
+
+/*HAMBURGER BUTTONS*/
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.hamburger-buttons div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    border-radius: 3px;
+}
+
+/*NAV*/
+nav {
+    background-color: #060955;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+}
+
+nav a:hover {
+    background: #072a42;
+}
+
+/*LAYOUT*/
+.container {
+    padding: 20px;
+    flex: 1;
+}
+
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* ============ RESPONSIVE HAMBURGER BUTTONS ============ */
+html, body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 1340px) {
+
+    .hamburger-buttons {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        width: 100%;
+        text-align: center;
+        padding: 6px;
+        font-size: 1.5rem;
+    }
+
+    /*PARA ABRIR Y CERRAR EL MENU*/
+    #menu-toggle:checked ~ nav {
+        display: flex;
+    }
+}
+
+@media (max-width:850px) {
+
+    .logotipo {
+        width: 50px;
+    }
+
+    .logo h1 {
+        font-size: 0.85rem;
+    }
+    nav a {
+        padding: 6px;
+        font-size: 1rem;
+    }
+}
+
+/* ================= BUTTONS ================= */
+
+button {
+    padding: 12px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #072a42;
+}
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+/* ========================================== */
+
+/*==================HTML -> DONACIONES=====================*/
+.donaciones-box {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+input, select {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+/*PAYMENT*/
+.payment-fields {
+    width: 90%;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.donaciones-box h2 {
+    margin-bottom: 10px;
+}
+
+.montos button {
+    margin-bottom: 10px;
+    border: none;
+}
+.montos button:hover {
+    background: #27ae60;
+}
+
+/*ERRORES*/
+.error {
+    border: 2px solid #e74c3c !important;
+    background-color: #ffecec;
+}
+
+.error-text {
+    color: #e74c3c;
+    font-size: 13px;
+    margin-top: 5px;
+    width: 90%;
+    text-align: left;
+}
+
+/*VALIDAR*/
+.valid {
+    border: 2px solid #2ecc71 !important;
+    background-color: #ecfff1;
+}
+/* ========================================================*/
+
+/*==================HTML -> BLOG=====================*/
+
+.main-titulo {
+  background: linear-gradient(135deg, #0f766e, #115e59);
+  color: #fff;
+  padding: 60px 20px;
+  text-align: center;
+  border-bottom: 5px solid #0ea5e9;
+}
+
+.main-titulo h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.main-titulo p {
+  font-size: 1.1rem;
+  opacity: 0.9;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cuerpo-style {
+  max-width: 900px;
+  margin: 30px auto;
+  background: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.cuerpo-style h2 {
+  color: #0f766e;
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  border-left: 5px solid #0ea5e9;
+  padding-left: 12px;
+}
+
+.cuerpo-style h3 {
+  color: #0b3d3a;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.cuerpo-style p {
+  margin-bottom: 15px;
+  font-size: 1rem;
+}
+
+.cuerpo-style ul {
+  padding-left: 20px;
+  margin: 12px 0 18px;
+}
+
+.cuerpo-style li {
+  margin-bottom: 8px;
+  transition: 0.2s ease;
+}
+
+/*effectos*/
+.cuerpo-style li:hover {
+  color: #0ea5e9;
+}
+
+.cuerpo-style strong {
+  color: #0f766e;
+}
+
+@media (max-width: 768px) {
+  .main-tituto h2 {
+    font-size: 1.5rem;
+  }
+
+  .cuerpo-style {
+    margin: 15px;
+    padding: 20px;
+  }
+
+  .cuerpo-style h2 {
+    font-size: 1.3rem;
+  }
+}
+/* ========================================================*/
+
+/* ================= CONTACTO ================= */
+#mensaje-mandado {
+    margin-top: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.mensaje-box {
+    width: 90%;
+    padding: 10px;
+    margin: 10px 0;
+    resize: none;
+    height: 120px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+/* ========================================================*/
+
+
+/* ================= GALERIA ================= */
+.gallery-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.gallery-item {
+    display: flex;
+    gap: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+    align-items: center;
+}
+
+.gallery-item picture img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.gallery-text h3 {
+    color: #0f766e;
+    margin-bottom: 8px;
+}
+
+.gallery-text p {
+    font-size: 0.95rem;
+    color: #333;
+}
+
+@media (max-width: 720px) {
+    .gallery-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .gallery-item picture img {
+        width: 100%;
+        height: auto;
+    }
+}
+/* ========================================================*/
+
+/* ================= PAGINA DE INICIO ================= */
+.home-hero {
+    background: linear-gradient(rgba(6,9,85,0.85), rgba(15,118,110,0.85)),
+    url("IMAGENES/imagenes_editados/photo_grupal.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    padding: 40px;
+}
+
+.home-hero-text {
+    max-width: 900px;
+}
+
+.home-hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.home-hero p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* BADGES */
+.home-badges {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge-line {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.85);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+}
+
+/*efecto de las lineas*/
+.badge-line::before,
+.badge-line::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background: rgba(255, 255, 255, 0.4);
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.home-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.home-section.reverse {
+    flex-direction: row-reverse;
+}
+
+/* CARDS */
+.home-card {
+    flex: 1;
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.home-card h2 {
+    color: #0f766e;
+    margin-bottom: 15px;
+    border-left: 5px solid #0ea5e9;
+    padding-left: 10px;
+}
+
+.home-card p, .home-card li {
+    font-size: 1rem;
+    color: #333;
+}
+
+.home-card ul {
+    padding-left: 20px;
+}
+
+.image-card {
+    padding: 0;
+    overflow: hidden;
+}
+
+.image-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.home-stats {
+    background: #060955;
+    color: white;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.stat-box h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: #0ea5e9;
+}
+
+.stat-box p {
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+@media (max-width: 900px) {
+    .home-section {
+        flex-direction: column;
+    }
+
+    .home-section.reverse {
+        flex-direction: column;
+    }
+
+    .home-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* ========================================================*/
