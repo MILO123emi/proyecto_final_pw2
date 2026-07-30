@@ -33,7 +33,8 @@ header {
 /*LOGO*/
 .logotipo {
     width: 100px;
-    border-radius: 100%;
+    height: auto;
+    border-radius: 50%;
     margin-right: auto;
 }
 
@@ -44,6 +45,10 @@ header {
     transform: translateX(-50%);
     margin: 0;
     text-align: center;
+}
+
+.main-title{
+    font-size: 3rem;
 }
 
 /*HAMBURGER BUTTONS*/
