@@ -70,6 +70,7 @@ header {
     height: 3px;
     background: white;
     border-radius: 3px;
+    text-align: center;
 }
 
 /*NAV*/
@@ -88,6 +89,7 @@ nav a {
     text-decoration: none;
     padding: 8px 12px;
     border-radius: 6px;
+    text-align: center;
 }
 
 nav a:hover {
@@ -95,10 +97,83 @@ nav a:hover {
 }
 
 /*LAYOUT*/
+
 .container {
-    padding: 20px;
+    padding: 0px;
     flex: 1;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
+
+.info-contacto {
+    flex: 1;
+    width: 100%;
+    max-width: 400px;
+    min-width: 280px;
+    padding: 25px;
+    margin: 0 auto;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.info-contacto h2 {
+    color: #000;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info-contacto p {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+.info-contacto a {
+    color: #0ea5e9;
+    text-decoration: none;
+}
+
+.info-contacto a:hover {
+    text-decoration: underline;
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+
+    .info-contacto {
+        padding: 20px;
+    }
+
+    .info-contacto h2 {
+        font-size: 1.6rem;
+    }
+
+    .info-contacto p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Phones */
+@media (max-width: 480px) {
+
+    .info-contacto {
+        min-width: unset;
+        width: 100%;
+        padding: 15px;
+    }
+
+    .info-contacto h2 {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    .info-contacto p {
+        font-size: 0.9rem;
+    }
+}
+
+
 
 footer {
     background: #222;
@@ -339,6 +414,7 @@ input, select {
     border: 1px solid #ccc;
     border-radius: 6px;
 }
+
 /* ========================================================*/
 
 
