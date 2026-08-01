@@ -13,84 +13,15 @@
 
     <input type="checkbox" id="menu-toggle">
 
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img class="logotipo" src="IMAGENES/logos/logo(copy).png" alt="Logo">
-            </a>
-            <h1>CARIBBEAN GLAM SALON</h1>
+    {{>header}}
 
-            <label for="menu-toggle" class="hamburger-buttons">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
-        </div>
-    </header>
+    {{>nav}}
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Nosotros.html">About Us</a>
-        <a href="Programas.html">Programs</a>
-        <a href="Ayuda.html">Help</a>
-        <a href="Contactanos.html">Contact</a>
-        <a href="Services.html">Services</a>
-        <a href="Eventos.html">Events</a>
-        <a href="Blog.html">Our Blog</a>
-        <a href="Galleria.html">Gallery</a>
-        <a href="FAQ.html">Frequently asked questions</a>
-    </nav>
+    {{>services-title_desc}}
 
-    <div class="main-titulo">
-        <h2>Services</h2>
-        <p>
-            Select a service and complete your payment to reserve your appointment at Caribbean Glam Salon.
-        </p>
-    </div>
+    {{>services-form}}
 
-    <div class="container">
-        <form id="donacionesForm" class="donaciones-box" method="GET" autocomplete="on">
-            <h2>Choose a Service</h2>
-
-            <div id="montosContainer" class="montos">
-                <button type="button" data-monto="300">Manicure<br><small>L300</small></button>
-                <button type="button" data-monto="500">Pedicure<br><small>L500</small></button>
-                <button type="button" data-monto="800">Hair Styling<br><small>L800</small></button>
-                <button type="button" data-monto="1500">>Balayage<br><small>L1500</small></button>
-            </div>
-
-            <input type="text" id="monto" name="monto" placeholder="Choose a service" readonly>
-
-            <div id="montoError"></div>
-
-            <select id="donaciones-metodo" name="metodo">
-                <option value="">Select payment method</option>
-                <option value="card">Credit Card</option>
-                <option value="paypal">PayPal</option>
-            </select>
-
-            <div id="metodoError"></div>
-
-            <!-- CARD -->
-            <div id="cardFields" class="payment-fields" style="display:none;">
-                <input id="cardNumber" type="text" placeholder="Card Number">
-                <input id="cardName" type="text" placeholder="Name on Card">
-                <input id="cardExpiry" type="text" placeholder="MM/AA">
-                <input id="cardCVV" type="text" placeholder="CVV">
-            </div>
-
-            <!-- PAYPAL -->
-            <div id="paypalFields" class="payment-fields" style="display:none;">
-                <input id="paypalEmail" name="email" type="email" placeholder="PayPal Email" autocomplete="email">
-            </div>
-            <div class="btn-pay">
-                <button type="submit" id="btnDonar">Pay to Reserve Appointment</button>
-            </div>
-
-            <p id="donaciones-mensaje"></p>
-        </form>
-    </div>
-    <footer>© 2026 CARIBBEAN GLAM SALON</footer>
+    {{>footer}}
     <script src="js/App.js"></script>
 </body>
 

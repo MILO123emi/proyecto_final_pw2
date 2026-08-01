@@ -12,33 +12,9 @@
 
     <input type="checkbox" id="menu-toggle">
 
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img class="logotipo" src="IMAGENES/logos/logo(copy).png" alt="Logo">
-            </a>
-            <h1>CARIBBEAN GLAM SALON</h1>
+    {{>header}}
 
-            <label for="menu-toggle" class="hamburger-buttons">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
-        </div>
-    </header>
-
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Nosotros.html">About Us</a>
-        <a href="Programas.html">Programs</a>
-        <a href="Ayuda.html">Help</a>
-        <a href="Contactanos.html">Contact</a>
-        <a href="Services.html">Services</a>
-        <a href="Eventos.html">Events</a>
-        <a href="Blog.html">Our Blog</a>
-        <a href="Galleria.html">Gallery</a>
-        <a href="FAQ.html">Frequently asked questions</a>
-    </nav>
+    {{>nav}}
 
     <div class="main-titulo">
         <h2>Gallery</h2>
@@ -245,7 +221,7 @@
     </section>
 
 
-    <footer>© 2026 CARIBBEAN GLAM SALON</footer>
+    {{>footer}}
 
     <script src="js/app.js"></script>
 </body>

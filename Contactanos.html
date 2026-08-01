@@ -13,73 +13,15 @@
 
     <input type="checkbox" id="menu-toggle">
 
-    <header>
-        <div class="logo">
-            <a href="index.html">
-                <img class="logotipo" src="IMAGENES/logos/logo(copy).png" alt="Logo">
-            </a>
-            <h1>CARIBBEAN GLAM SALON</h1>
+    {{>header}}
 
-            <label for="menu-toggle" class="hamburger-buttons">
-                <div></div>
-                <div></div>
-                <div></div>
-            </label>
-        </div>
-    </header>
+    {{>nav}}
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="Nosotros.html">About Us</a>
-        <a href="Programas.html">Programs</a>
-        <a href="Ayuda.html">Help</a>
-        <a href="Contactanos.html">Contact</a>
-        <a href="Services.html">Services</a>
-        <a href="Eventos.html">Events</a>
-        <a href="Blog.html">Our Blog</a>
-        <a href="Galleria.html">Gallery</a>
-        <a href="FAQ.html">Frequently asked questions</a>
-    </nav>
+    {{>contact-title_desc}}
 
-    <div class="main-titulo">
-        <h2>Contact Us</h2>
-        <p>
-            Have a question or need more information? Contact Caribbean Glam Salon—I'm here to help and look forward to
-            hearing from you.
-        </p>
-    </div>
+    {{>contact-form}}
 
-    <div class="container">
-
-        <form id="donacionesForm" class="donaciones-box" method="GET" autocomplete="on" novalidate>
-
-            <div class="info-contacto">
-                <h2>Contact Information</h2>
-                <p><strong>🌴 Instagram:</strong>
-                    <a href="https://www.instagram.com/caribbean_glamsalon?igsh=bHNpN2MzdTFkeTg5" target="_blank">Visit
-                        Page</a>
-                </p>
-                <p><strong>📞 Phone Number:</strong> +504 3284-2599</p>
-            </div>
-
-            <h2>Send us a message</h2>
-
-            <input type="text" placeholder="Full Name" id="name" name="name">
-            <div id="nombreError" class="error-text"></div>
-
-            <input type="email" placeholder="Email" id="email" name="email">
-            <div id="emailError" class="error-text"></div>
-
-            <textarea class="mensaje-box" placeholder="Message" id="mensaje" name="mensaje"></textarea>
-            <div id="mensajeError" class="error-text"></div>
-
-            <button type="submit" id="btnEnviar">Send</button>
-            <p id="mensaje-mandado"></p>
-        </form>
-
-    </div>
-
-    <footer>© 2026 CARIBBEAN GLAM SALON</footer>
+    {{>footer}}
     <script src="js/App.js"></script>
 </body>
 
