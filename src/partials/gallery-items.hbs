@@ -1,0 +1,16 @@
+<section class="gallery-container">
+    {{#each this}}
+        <div class="gallery-item">
+            <picture>
+                <source srcset="{{card_img}}" media="(min-width:1025px)" />
+                <source srcset="{{card_img}}" media="(min-width:720px)" />
+                <img src="{{card_img}}" alt="{{card_alt}}">
+            </picture>
+
+            <div class="gallery-text">
+                <h3>{{card_title}}</h3>
+                <p>{{card_description}}</p>
+            </div>
+        </div>
+    {{/each}}
+</section>

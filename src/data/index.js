@@ -1,19 +1,15 @@
 
 
-import homeContext from './pages/index_page';
-import productosContext from './pages/index_items';
-import deportesContext from './pages/index_rankings';
+import galleryContext from "./pages/gallery_page";
+//import productosContext from './pages/index_items';
 
 export default (page) => {
     switch (page) {
-        case '/index.html':
-            return homeContext;
+        case '/Gallery.html':
+            return galleryContext;
 
-        case '/productos.html':
-            return productosContext;
-
-        case '/deportes.html':
-            return deportesContext
+       // case '/productos.html':
+            //return productosContext;
 
         default:
             return {};
