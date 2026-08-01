@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //nombre
         if (regexIsEmpty.test(nombreInput.value)) {
-            mostrarError(nombreInput, "Ingresa tu nombre.");
+            mostrarError(nombreInput, "Enter your name.");
             valido = false;
         } else {
             mostrarError(nombreInput, "");
@@ -45,11 +45,11 @@ document.addEventListener("DOMContentLoaded", () => {
         const emailValue = emailInput.value.trim();
 
         if (regexIsEmpty.test(emailValue)) {
-            mostrarError(emailInput, "Ingresa tu correo.");
+            mostrarError(emailInput, "Enter your email.");
             valido = false;
         } 
         else if (!regexEmail.test(emailValue)) {
-            mostrarError(emailInput, "Correo inválido.");
+            mostrarError(emailInput, "Invalid email.");
             valido = false;
         } 
         else {
@@ -58,7 +58,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         //MESSAGE
         if (regexIsEmpty.test(mensajeInput.value)) {
-            mostrarError(mensajeInput, "Escribe un mensaje.");
+            mostrarError(mensajeInput, "Write a message.");
             valido = false;
         } else {
             mostrarError(mensajeInput, "");
@@ -97,7 +97,7 @@ function procesarFormulario() {
     const mensajeEstado = document.getElementById("mensaje-mandado");
 
     btn.disabled = true;
-    btn.textContent = "Enviando...";
+    btn.textContent = "Sending...";
 
     setTimeout(() => {
 
@@ -109,7 +109,7 @@ function procesarFormulario() {
 
         window.history.replaceState({}, "", "?" + params.toString());
 
-        mensajeEstado.textContent = "Mensaje enviado correctamente";
+        mensajeEstado.textContent = "Message sent successfully";
         mensajeEstado.style.color = "green";
 
         //BORRAR MENSAJE

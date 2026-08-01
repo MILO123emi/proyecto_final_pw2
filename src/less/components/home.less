@@ -1,0 +1,165 @@
+/* ================= PAGINA DE INICIO ================= */
+.home-hero {
+    background: linear-gradient(@secondary_color, @color_accent),
+        url("IMAGENES/imagenes_editados/photo_grupal.jpg");
+    background-size: cover;
+    background-position: center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: @primary_text;
+    padding: 40px;
+
+    &-text {
+        max-width: 900px;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+        margin-bottom: 15px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        opacity: 0.95;
+    }
+}
+
+.home-card-img {
+    color: lighten(@primary_text, 50%);
+}
+
+
+/* BADGES */
+.home-badges {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge-line {
+    font-size: 1rem;
+    color: @primary_text;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 300;
+    position: relative;
+}
+
+/*efecto de las lineas*/
+.badge-line::before,
+.badge-line::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 1px;
+    background: @secondary_text;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.home-section {
+    max-width: 1100px;
+    margin: 60px auto;
+    padding: 20px;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+
+    .reverse {
+        flex-direction: row-reverse;
+    }
+}
+
+/* CARDS */
+.home-card {
+    flex: 1;
+    background: @primary_text;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+
+    h2 {
+        color: lighten(@secondary_text, 50%);
+        ;
+        margin-bottom: 15px;
+        border-left: 5px solid lighten(@color_accent, 10%);
+        padding-left: 10px;
+    }
+
+    p {
+        font-size: 1rem;
+        color: lighten(@primary_text, 50%);
+    }
+
+    li {
+        font-size: 1rem;
+        color: lighten(@primary_text, 50%);
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+}
+
+.image-card {
+    padding: 0;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+}
+
+.home-stats {
+    background: @secondary_background;
+    color: @secondary_text, 50%;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.stat-box {
+    h3 {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        color: @secondary_text, 50%;
+    }
+
+    p {
+        font-size: 0.95rem;
+        opacity: 0.9;
+    }
+}
+
+@media (max-width: 900px) {
+    .home-section {
+        flex-direction: column;
+
+        .reverse {
+            flex-direction: column;
+        }
+
+    }
+
+    .home-hero h1 {
+        font-size: 1.8rem;
+    }
+
+    .home-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+/* ========================================================*/

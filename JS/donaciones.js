@@ -132,7 +132,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //mensaje de error del MONTO
         if (regexIsEmpty.test(montoInput.value) || Number(montoInput.value) <= 0) {
             errores.montoError = {
-                error: "Ingresa un monto válido.",
+                error: "Select a valid Option",
                 input: montoInput
             };
             valido = false;
@@ -141,7 +141,7 @@ document.addEventListener("DOMContentLoaded", () => {
         //mensaje de error del MÉTODO
         if (regexIsEmpty.test(metodoSelect.value)) {
             errores.metodoError = {
-                error: "Selecciona un método de pago.",
+                error: "Select a payment method.",
                 input: metodoSelect
             };
             valido = false;
@@ -159,7 +159,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!regexCardNumber.test(cardNumber.value) && !regexCardNumber.test(cleanCardNumber)) {
                 errores.cardNumberError = {
-                    error: "Número de tarjeta inválido.",
+                    error: "Invalid card number.",
                     input: cardNumber
                 };
                 valido = false;
@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!regexCardName.test(cardName.value)) {
                 errores.cardNameError = {
-                    error: "Nombre inválido.",
+                    error: "Invalid name.",
                     input: cardName
                 };
                 valido = false;
@@ -175,7 +175,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!regexExpiry.test(cardExpiry.value.trim())) {
                 errores.cardExpiryError = {
-                    error: "Fecha inválida (MM/YY).",
+                    error: "Invalid date (MM/YY).",
                     input: cardExpiry
                 };
                 valido = false;
@@ -183,7 +183,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!regexCVV.test(cardCVV.value)) {
                 errores.cardCvvError = {
-                    error: "CVV inválido.",
+                    error: "Invalid CVV.",
                     input: cardCVV
                 };
                 valido = false;
@@ -197,7 +197,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             if (!regexEmail.test(paypalEmail.value)) {
                 errores.paypalError = {
-                    error: "Correo inválido.",
+                    error: "Invalid email.",
                     input: paypalEmail
                 };
                 valido = false;
@@ -240,8 +240,10 @@ function limpiarErrores() {
 //BOTONES DINÁMICOS -> funcion para cambiar el valor y nombre de los botones
 function actualizarBotones() {
 
-    const valoresTarjeta = [100, 300, 500, 1000];
-    const valoresPaypal = [5, 10, 25, 50];
+
+    const nombresTarjeta = ["Manicure", "Pedicure", "Hair Styling", "Balayage"];
+    const valoresTarjeta = [300, 500, 800, 1500];
+    const valoresPaypal = [12, 20, 30, 56];
 
     const esPaypal = metodoSelect.value === "paypal";
 
@@ -249,10 +251,10 @@ function actualizarBotones() {
 
         if (esPaypal) {
             btn.dataset.monto = valoresPaypal[index];
-            btn.textContent = "$" + valoresPaypal[index];
+            btn.textContent = nombresTarjeta[index] + " $" + valoresPaypal[index];
         } else {
             btn.dataset.monto = valoresTarjeta[index];
-            btn.textContent = "L" + valoresTarjeta[index];
+            btn.textContent = nombresTarjeta[index] + " L" + valoresTarjeta[index];
         }
     });
 }
@@ -261,7 +263,8 @@ function actualizarBotones() {
 function procesarDonacion() {
 
     mensaje.style.color = "black";
-    mensaje.textContent = "Procesando donación...";
+    mensaje.textContent = "Processing donation...";
+    const mensajeEstado = document.getElementById("donaciones-mensaje");
 
     const params = new URLSearchParams({
         monto: montoInput.value,
@@ -278,7 +281,12 @@ function procesarDonacion() {
 
         mensaje.style.color = "green";
         mensaje.textContent =
-            "Donación exitosa de " + simbolo + montoInput.value + " vía " + metodoTexto;
+            "You've successfully sent " + simbolo + montoInput.value + " via " + metodoTexto;
+
+        //BORRAR MENSAJE
+        setTimeout(() => {
+            mensajeEstado.textContent = "";
+        }, 3000);
 
         formulario.reset();
         limpiarErrores();

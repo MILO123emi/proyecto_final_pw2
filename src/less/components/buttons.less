@@ -1,0 +1,23 @@
+/* ================= BUTTONS ================= */
+
+button {
+    padding: 12px;
+    background: @button_primary;
+    color: @tertiary_text;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+
+    &:hover {
+        background: darken(@primary_color, 15%);
+    }
+
+    &:disabled {
+        background: @button_off;
+        cursor: not-allowed;
+        opacity: 0.7;
+    }
+}
+
+/* ========================================== */

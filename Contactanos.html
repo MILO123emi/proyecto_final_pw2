@@ -1,82 +1,86 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactanos</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./src/less/styles.less">
     <script src="js/contactanos.js" defer></script>
 </head>
 
 <body>
 
-<input type="checkbox" id="menu-toggle">
+    <input type="checkbox" id="menu-toggle">
 
-<header>
-    <div class="logo">
-        <a href="Index.html">
-            <img class="logotipo" src="IMAGENES/logos/logo(copy).png" alt="Logo">
-        </a>
-        <h1>CARIBBEAN GLAM SALON</h1>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logotipo" src="IMAGENES/logos/logo(copy).png" alt="Logo">
+            </a>
+            <h1>CARIBBEAN GLAM SALON</h1>
 
-        <label for="menu-toggle" class="hamburger-buttons">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
-    </div>
-</header>
-
-<nav>
-    <a href="Index.html">Inicio</a>
-    <a href="Nosotros.html">Acerca de Nosotros</a>
-    <a href="Programas.html">Programas</a>
-    <a href="Ayuda.html">Ayudar</a>
-    <a href="Contactanos.html">Contacto</a>
-    <a href="Donaciones.html">Donaciones</a>
-    <a href="Eventos.html">Eventos</a>
-    <a href="Blog.html">Nuestro Blog</a>
-    <a href="Galleria.html">Galeria</a>
-    <a href="FAQ.html">Preguntas frecuentes</a>
-</nav>
-
-<div class="main-titulo">
-    <h2>Contact Us</h2>
-    <p>
-        Have a question or need more information? Contact Caribbean Glam Salon—I'm here to help and look forward to hearing from you.
-    </p>    
-</div>
-
-<div class="container">
-
-    <form id="donacionesForm" class="donaciones-box" method="GET" autocomplete="on" novalidate>
-
-        <div class="info-contacto">
-        <h2>Contact Information</h2>
-        <p><strong>🌴 Instagram:</strong> 
-            <a href="https://www.instagram.com/caribbean_glamsalon?igsh=bHNpN2MzdTFkeTg5" target="_blank">Visit Page</a>
-        </p>
-        <p><strong>📞 Teléfono:</strong> +504 3284-2599</p>
+            <label for="menu-toggle" class="hamburger-buttons">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
         </div>
+    </header>
 
-        <h2>Envíanos un mensaje</h2>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Nosotros.html">About Us</a>
+        <a href="Programas.html">Programs</a>
+        <a href="Ayuda.html">Help</a>
+        <a href="Contactanos.html">Contact</a>
+        <a href="Services.html">Services</a>
+        <a href="Eventos.html">Events</a>
+        <a href="Blog.html">Our Blog</a>
+        <a href="Galleria.html">Gallery</a>
+        <a href="FAQ.html">Frequently asked questions</a>
+    </nav>
 
-        <input type="text" placeholder="Nombre Completo" id="name" name="name">
-        <div id="nombreError" class="error-text"></div>
+    <div class="main-titulo">
+        <h2>Contact Us</h2>
+        <p>
+            Have a question or need more information? Contact Caribbean Glam Salon—I'm here to help and look forward to
+            hearing from you.
+        </p>
+    </div>
 
-        <input type="email" placeholder="Correo" id="email" name="email">
-        <div id="emailError" class="error-text"></div>
+    <div class="container">
 
-        <textarea class="mensaje-box" placeholder="Mensaje" id="mensaje" name="mensaje"></textarea>
-        <div id="mensajeError" class="error-text"></div>
+        <form id="donacionesForm" class="donaciones-box" method="GET" autocomplete="on" novalidate>
 
-        <button type="submit" id="btnEnviar">Enviar</button>
-        <p id="mensaje-mandado"></p>
-    </form>
+            <div class="info-contacto">
+                <h2>Contact Information</h2>
+                <p><strong>🌴 Instagram:</strong>
+                    <a href="https://www.instagram.com/caribbean_glamsalon?igsh=bHNpN2MzdTFkeTg5" target="_blank">Visit
+                        Page</a>
+                </p>
+                <p><strong>📞 Phone Number:</strong> +504 3284-2599</p>
+            </div>
 
-</div>
+            <h2>Send us a message</h2>
 
-<footer>© 2026 CARIBBEAN GLAM SALON</footer>
-<script src="js/App.js"></script>
+            <input type="text" placeholder="Full Name" id="name" name="name">
+            <div id="nombreError" class="error-text"></div>
+
+            <input type="email" placeholder="Email" id="email" name="email">
+            <div id="emailError" class="error-text"></div>
+
+            <textarea class="mensaje-box" placeholder="Message" id="mensaje" name="mensaje"></textarea>
+            <div id="mensajeError" class="error-text"></div>
+
+            <button type="submit" id="btnEnviar">Send</button>
+            <p id="mensaje-mandado"></p>
+        </form>
+
+    </div>
+
+    <footer>© 2026 CARIBBEAN GLAM SALON</footer>
+    <script src="js/App.js"></script>
 </body>
+
 </html>

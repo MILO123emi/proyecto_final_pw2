@@ -1,148 +1,149 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="./src/less/styles.less">
+    <!--<link rel="stylesheet" href="css/styles.css">-->
 </head>
+
 <body>
-  <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+    <input type="checkbox" id="menu-toggle">
 
-<input type="checkbox" id="menu-toggle">
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img class="logotipo" src="IMAGENES/logos/logo(copy).png" alt="Logo">
+            </a>
+            <h1>CARIBBEAN GLAM SALON</h1>
 
-<header>
-    <div class="logo">
-        <a href="Index.html">
-            <img class="logotipo" src="IMAGENES/logos/logo(copy).png" alt="Logo">
-        </a>
-        <h1>CARIBBEAN GLAM SALON</h1>
-
-        <label for="menu-toggle" class="hamburger-buttons">
-            <div></div>
-            <div></div>
-            <div></div>
-        </label>
-    </div>
-</header>
-
-<nav>
-    <a href="Index.html">Inicio</a>
-    <a href="Nosotros.html">Acerca de Nosotros</a>
-    <a href="Programas.html">Programas</a>
-    <a href="Ayuda.html">Ayudar</a>
-    <a href="Contactanos.html">Contacto</a>
-    <a href="Donaciones.html">Donaciones</a>
-    <a href="Eventos.html">Eventos</a>
-    <a href="Blog.html">Nuestro Blog</a>
-    <a href="Galleria.html">Galeria</a>
-    <a href="FAQ.html">Preguntas frecuentes</a>
-</nav>
-
-
-<div class="home-hero">
-
-    <div class="home-hero-text">
-        <h2 class="main-title">Instituto Gubernamental Desarrollo Sostenible “El Hábitat” M.D.C.</h2>
-        <p>
-            Formando generaciones responsables, con educación de calidad, valores humanos y compromiso ambiental
-            en Francisco Morazán, Honduras.
-        </p>
-
-        <div class="home-badges">
-            <div class="badge-line">Educación Pública</div>
-            <div class="badge-line">Desarrollo Sostenible</div>
-            <div class="badge-line">Formación Integral</div>
+            <label for="menu-toggle" class="hamburger-buttons">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
         </div>
+    </header>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Nosotros.html">About Us</a>
+        <a href="Programas.html">Programs</a>
+        <a href="Ayuda.html">Help</a>
+        <a href="Contactanos.html">Contact</a>
+        <a href="Services.html">Services</a>
+        <a href="Eventos.html">Events</a>
+        <a href="Blog.html">Our Blog</a>
+        <a href="Galleria.html">Gallery</a>
+        <a href="FAQ.html">Frequently asked questions</a>
+    </nav>
+
+
+    <div class="home-hero">
+
+        <div class="home-hero-text">
+            <h2 class="main-title">Instituto Gubernamental Desarrollo Sostenible “El Hábitat” M.D.C.</h2>
+            <p>
+                Formando generaciones responsables, con educación de calidad, valores humanos y compromiso ambiental
+                en Francisco Morazán, Honduras.
+            </p>
+
+            <div class="home-badges">
+                <div class="badge-line">Educación Pública</div>
+                <div class="badge-line">Desarrollo Sostenible</div>
+                <div class="badge-line">Formación Integral</div>
+            </div>
+        </div>
+
     </div>
 
-</div>
+    <section class="home-section">
 
-<section class="home-section">
+        <div class="home-card">
+            <h2>¿Quiénes somos?</h2>
+            <p>
+                Somos una institución educativa ubicada en Francisco Morazán, Honduras, comprometida con la formación
+                académica, humana y social de nuestros estudiantes. Promovemos el aprendizaje con valores, disciplina y
+                conciencia ambiental.
+            </p>
+        </div>
 
-    <div class="home-card">
-        <h2>¿Quiénes somos?</h2>
-        <p>
-            Somos una institución educativa ubicada en Francisco Morazán, Honduras, comprometida con la formación
-            académica, humana y social de nuestros estudiantes. Promovemos el aprendizaje con valores, disciplina y
-            conciencia ambiental.
-        </p>
-    </div>
+        <div class="home-card image-card">
+            <picture>
+                <source srcset="IMAGENES/imagenes_editados/photo_grupal.jpg" media="(min-width:1025px)" />
+                <img class="home-card-img" src="IMAGENES/imagenes_editados/photo_grupal.jpg" alt="Comunidad educativa">
+            </picture>
+        </div>
 
-    <div class="home-card image-card">
-        <picture>
-            <source srcset="IMAGENES/imagenes_editados/photo_grupal.jpg" media="(min-width:1025px)" />
-            <img src="IMAGENES/imagenes_editados/photo_grupal.jpg" alt="Comunidad educativa">
-        </picture>
-    </div>
+    </section>
 
-</section>
+    <section class="home-section reverse">
 
-<section class="home-section reverse">
+        <div class="home-card image-card">
+            <picture>
+                <source srcset="IMAGENES/imagenes_editados/entonacion_himno_nacional.jpg" media="(min-width:1025px)" />
+                <img class="home-card-img" src="IMAGENES/imagenes_editados/entonacion_himno_nacional.jpg"
+                    alt="Acto cívico">
+            </picture>
+        </div>
 
-    <div class="home-card image-card">
-        <picture>
-            <source srcset="IMAGENES/imagenes_editados/entonacion_himno_nacional.jpg" media="(min-width:1025px)" />
-            <img src="IMAGENES/imagenes_editados/entonacion_himno_nacional.jpg" alt="Acto cívico">
-        </picture>
-    </div>
+        <div class="home-card">
+            <h2>Formación con identidad nacional</h2>
+            <p>
+                Fomentamos el respeto a los símbolos patrios de Honduras, fortaleciendo el civismo, la disciplina
+                y el sentido de pertenencia en nuestros estudiantes.
+            </p>
+        </div>
 
-    <div class="home-card">
-        <h2>Formación con identidad nacional</h2>
-        <p>
-            Fomentamos el respeto a los símbolos patrios de Honduras, fortaleciendo el civismo, la disciplina
-            y el sentido de pertenencia en nuestros estudiantes.
-        </p>
-    </div>
+    </section>
 
-</section>
+    <section class="home-stats">
 
-<section class="home-stats">
+        <div class="stat-box">
+            <h3>+10 años</h3>
+            <p>Formando estudiantes en la comunidad</p>
+        </div>
 
-    <div class="stat-box">
-        <h3>+10 años</h3>
-        <p>Formando estudiantes en la comunidad</p>
-    </div>
+        <div class="stat-box">
+            <h3>Educación integral</h3>
+            <p>Académica, humana y ambiental</p>
+        </div>
 
-    <div class="stat-box">
-        <h3>Educación integral</h3>
-        <p>Académica, humana y ambiental</p>
-    </div>
+        <div class="stat-box">
+            <h3>Compromiso</h3>
+            <p>Con el desarrollo sostenible</p>
+        </div>
 
-    <div class="stat-box">
-        <h3>Compromiso</h3>
-        <p>Con el desarrollo sostenible</p>
-    </div>
+    </section>
 
-</section>
+    <section class="home-section">
 
-<section class="home-section">
+        <div class="home-card">
+            <h2>Nuestro compromiso</h2>
+            <p>
+                Trabajamos para brindar educación accesible y de calidad en Francisco Morazán, formando jóvenes capaces
+                de transformar su entorno con conocimiento, valores y responsabilidad social.
+            </p>
+        </div>
 
-    <div class="home-card">
-        <h2>Nuestro compromiso</h2>
-        <p>
-            Trabajamos para brindar educación accesible y de calidad en Francisco Morazán, formando jóvenes capaces
-            de transformar su entorno con conocimiento, valores y responsabilidad social.
-        </p>
-    </div>
+        <div class="home-card">
+            <h2>Lo que nos diferencia</h2>
+            <ul>
+                <li>Educación enfocada en sostenibilidad</li>
+                <li>Participación activa estudiantil</li>
+                <li>Actividades cívicas y culturales</li>
+                <li>Formación en valores humanos</li>
+                <li>Conexión con la comunidad</li>
+            </ul>
+        </div>
 
-    <div class="home-card">
-        <h2>Lo que nos diferencia</h2>
-        <ul>
-            <li>Educación enfocada en sostenibilidad</li>
-            <li>Participación activa estudiantil</li>
-            <li>Actividades cívicas y culturales</li>
-            <li>Formación en valores humanos</li>
-            <li>Conexión con la comunidad</li>
-        </ul>
-    </div>
+    </section>
 
-</section>
+    <footer>© 2026 CARIBBEAN GLAM SALON</footer>
 
-<footer>© 2026 CARIBBEAN GLAM SALON</footer>
-
-<script src="js/app.js"></script>
+    <script src="js/app.js"></script>
 </body>
+
 </html>

@@ -1,0 +1,77 @@
+/* ============ HAMBURGER BUTTONS ============ */
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburger-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    margin-left: auto;
+
+    div {
+        width: 25px;
+        height: 3px;
+        background: @primary_background;
+        border-radius: 3px;
+        text-align: center;
+    }
+}
+
+/*RESPONSIVE HAMBURGER BUTTONS*/
+html,
+body {
+    overflow-x: hidden;
+}
+
+@media (max-width: 1340px) {
+
+    .hamburger-buttons {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+
+        a {
+            width: 100%;
+            text-align: center;
+            padding: 6px 0px;
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+
+
+
+    /*PARA ABRIR Y CERRAR EL MENU*/
+    #menu-toggle:checked~nav {
+        display: flex;
+    }
+}
+
+@media (max-width:850px) {
+
+    .logotipo {
+        width: 50px;
+    }
+
+    .logo h1 {
+        font-size: 0.85rem;
+    }
+
+    nav a {
+        padding: 6px 0px;
+        font-size: 1rem;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
