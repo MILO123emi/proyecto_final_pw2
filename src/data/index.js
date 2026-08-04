@@ -1,15 +1,13 @@
-
-
 import galleryContext from "./pages/gallery_page";
-//import productosContext from './pages/index_items';
+import aboutContext from "./pages/about_page";
 
 export default (page) => {
     switch (page) {
         case '/Gallery.html':
             return galleryContext;
 
-       // case '/productos.html':
-            //return productosContext;
+        case '/About_us.html':
+            return aboutContext;
 
         default:
             return {};
