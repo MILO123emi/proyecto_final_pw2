@@ -1,6 +1,6 @@
 /* ================= PAGINA DE INICIO ================= */
 .home-hero {
-    background: linear-gradient(@secondary_color, @color_accent),
+    background: linear-gradient(@primary_color, @color_accent, white),
         url("IMAGENES/imagenes_editados/photo_grupal.jpg");
     background-size: cover;
     background-position: center;
@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    color: @primary_text;
+    color: white;
     padding: 40px;
 
     &-text {
@@ -28,7 +28,7 @@
 }
 
 .home-card-img {
-    color: lighten(@primary_text, 50%);
+    color: lighten(@secondary_text, 50%);
 }
 
 
@@ -84,7 +84,7 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 
     h2 {
-        color: lighten(@secondary_text, 50%);
+        color: lighten(@primary_text, 50%);
         ;
         margin-bottom: 15px;
         border-left: 5px solid lighten(@color_accent, 10%);
