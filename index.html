@@ -4,8 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+
+
+    <title>Inicio | Caribbean Glam Salon</title>
     <link rel="stylesheet" href="./src/less/styles.less">
+
+    
+    <!-- <link rel="stylesheet" href="css/styles.css"> -->
+
 </head>
 
 <body>
@@ -14,110 +20,131 @@
 
     {{>nav}}
 
+    <input type="checkbox" id="menu-toggle" aria-label="Abrir menú de navegación">
 
-    <div class="home-hero">
+    <header>
+        <div class="logo">
+            <a href="index.html" aria-label="Ir a la página de inicio">
+                <img class="logotipo" src="IMAGENES/logos/logo(copy).png" alt="Logo del instituto El Hábitat">
+            </a>
+            <h1>CARIBBEAN GLAM SALON</h1>
 
-        <div class="home-hero-text">
-            <h2 class="main-title">Instituto Gubernamental Desarrollo Sostenible “El Hábitat” M.D.C.</h2>
-            <p>
-                Formando generaciones responsables, con educación de calidad, valores humanos y compromiso ambiental
-                en Francisco Morazán, Honduras.
-            </p>
+            <label for="menu-toggle" class="hamburger-buttons" aria-label="Abrir menú">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+        </div>
+    </header>
 
-            <div class="home-badges">
-                <div class="badge-line">Educación Pública</div>
-                <div class="badge-line">Desarrollo Sostenible</div>
-                <div class="badge-line">Formación Integral</div>
+    <nav aria-label="Navegación principal">
+        <a href="index.html">Inicio</a>
+        <a href="Nosotros.html">Acerca de Nosotros</a>
+        <a href="Programas.html">Programas</a>
+        <a href="Ayuda.html">Ayudar</a>
+        <a href="Contactanos.html">Contacto</a>
+        <a href="Donaciones.html">Donaciones</a>
+        <a href="Eventos.html">Eventos</a>
+        <a href="Blog.html">Nuestro Blog</a>
+        <a href="Galleria.html">Galeria</a>
+        <a href="FAQ.html">Preguntas frecuentes</a>
+    </nav>
+
+    <main>
+        <section class="home-hero" aria-label="Presentación principal">
+            <div class="home-hero-text">
+                <h2 class="main-title">Caribbean Glam Salon</h2>
+                <p>
+                    Aquí se cuida el detalle, se escucha lo que te gusta y se trabaja para que salgas con buena
+                    vibra y con un look que te haga sentir bien.
+                </p>
+
+                <ul class="home-badges" aria-label="Principales servicios del salon">
+                    <li class="badge-line">Belleza</li>
+                    <li class="badge-line">Estilo</li>
+                    <li class="badge-line">Cuidado</li>
+                </ul>
             </div>
-        </div>
+        </section>
 
-    </div>
+        <section class="home-section">
+            <article class="home-card">
+                <h2>¿Quiénes somos?</h2>
+                <p>
+                    Somos un salón donde se trata bien a la gente y se cuida el estilo. La idea es que te sientas cómoda,
+                    relajada y contenta con el resultado.
+                </p>
+            </article>
 
-    <section class="home-section">
+            <article class="home-card home-highlight">
+                <h2>Lo que buscamos</h2>
+                <p>
+                    Que la visita se sienta fácil y agradable, con atención amable y con un trabajo que se vea bien hecho.
+                </p>
+            </article>
+        </section>
 
-        <div class="home-card">
-            <h2>¿Quiénes somos?</h2>
-            <p>
-                Somos una institución educativa ubicada en Francisco Morazán, Honduras, comprometida con la formación
-                académica, humana y social de nuestros estudiantes. Promovemos el aprendizaje con valores, disciplina y
-                conciencia ambiental.
-            </p>
-        </div>
+        <section class="home-section reverse">
+            <article class="home-card home-highlight">
+                <h2>Estilo personal</h2>
+                <p>
+                    Cada servicio se trata de forma distinta porque cada persona es distinta. Lo importante es que te veas
+                    bien y te sientas cómoda con lo que te hacen.
+                </p>
+            </article>
 
-        <div class="home-card image-card">
-            <picture>
-                <source srcset="IMAGENES/imagenes_editados/photo_grupal.jpg" media="(min-width:1025px)" />
-                <img class="home-card-img" src="IMAGENES/imagenes_editados/photo_grupal.jpg" alt="Comunidad educativa">
-            </picture>
-        </div>
+            <article class="home-card">
+                <h2>Ambiente tranquilo</h2>
+                <p>
+                    Aquí se busca que te relajes, te atiendan bien y salgas con una buena sensación. Ese trato cercano es
+                    lo que más nos importa.
+                </p>
+            </article>
+        </section>
 
-    </section>
+        <section class="home-stats" aria-label="Destacados del salon">
+            <article class="stat-box">
+                <h3>Atención cercana</h3>
+                <p>Te atienden con calma y buen trato.</p>
+            </article>
 
-    <section class="home-section reverse">
+            <article class="stat-box">
+                <h3>Estilo propio</h3>
+                <p>Se trabaja con un enfoque simple y elegante.</p>
+            </article>
 
-        <div class="home-card image-card">
-            <picture>
-                <source srcset="IMAGENES/imagenes_editados/entonacion_himno_nacional.jpg" media="(min-width:1025px)" />
-                <img class="home-card-img" src="IMAGENES/imagenes_editados/entonacion_himno_nacional.jpg"
-                    alt="Acto cívico">
-            </picture>
-        </div>
+            <article class="stat-box">
+                <h3>Confianza</h3>
+                <p>Un espacio para relajarte y verte mejor.</p>
+            </article>
+        </section>
 
-        <div class="home-card">
-            <h2>Formación con identidad nacional</h2>
-            <p>
-                Fomentamos el respeto a los símbolos patrios de Honduras, fortaleciendo el civismo, la disciplina
-                y el sentido de pertenencia en nuestros estudiantes.
-            </p>
-        </div>
+        <section class="home-section">
+            <article class="home-card">
+                <h2>Nuestro compromiso</h2>
+                <p>
+                    Queremos que cada cliente salga con la sensación de que lo hicieron con cariño y con atención. Un buen
+                    servicio se nota en los detalles.
+                </p>
+            </article>
 
-    </section>
-
-    <section class="home-stats">
-
-        <div class="stat-box">
-            <h3>+10 años</h3>
-            <p>Formando estudiantes en la comunidad</p>
-        </div>
-
-        <div class="stat-box">
-            <h3>Educación integral</h3>
-            <p>Académica, humana y ambiental</p>
-        </div>
-
-        <div class="stat-box">
-            <h3>Compromiso</h3>
-            <p>Con el desarrollo sostenible</p>
-        </div>
-
-    </section>
-
-    <section class="home-section">
-
-        <div class="home-card">
-            <h2>Nuestro compromiso</h2>
-            <p>
-                Trabajamos para brindar educación accesible y de calidad en Francisco Morazán, formando jóvenes capaces
-                de transformar su entorno con conocimiento, valores y responsabilidad social.
-            </p>
-        </div>
-
-        <div class="home-card">
-            <h2>Lo que nos diferencia</h2>
-            <ul>
-                <li>Educación enfocada en sostenibilidad</li>
-                <li>Participación activa estudiantil</li>
-                <li>Actividades cívicas y culturales</li>
-                <li>Formación en valores humanos</li>
-                <li>Conexión con la comunidad</li>
-            </ul>
-        </div>
-
-    </section>
+            <article class="home-card">
+                <h2>Lo que nos diferencia</h2>
+                <ul>
+                    <li>Trato amable</li>
+                    <li>Detalles bien hechos</li>
+                    <li>Estilo cuidado</li>
+                    <li>Ambiente tranquilo</li>
+                    <li>Buena experiencia</li>
+                </ul>
+            </article>
+        </section>
+    </main>
 
     {{>footer}}
-
     <script src="js/app.js"></script>
+
+    <!-- <script type="module" src="JS/App.js"></script> -->
 </body>
 
 </html>
