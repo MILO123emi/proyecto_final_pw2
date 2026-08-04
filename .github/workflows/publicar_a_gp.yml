@@ -33,6 +33,8 @@ jobs:
         run: npm run build
       - name: Configurar github pages para Publicar
         uses: actions/configure-pages@v5
+        with: 
+          enablement: true
       - name: Subir los compilares (DIST)
         uses: actions/upload-pages-artifact@v4
         with:
