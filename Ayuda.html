@@ -12,31 +12,25 @@
 
 {{>header}}
     {{>nav}}
+    
+ {{>heading titulo="Centro de Ayuda" descripcion="Soporte y orientación para el uso del sitio web institucional" }}
 
-<div class="main-titulo">
-    <h2>Centro de Ayuda</h2>
-    <p>Soporte y orientación para el uso del sitio web institucional</p>
-</div>
 
-<section class="cuerpo-style">
-    <h2>Bienvenido al centro de ayuda</h2>
-    <p>
-        Esta sección está diseñada para orientarte en el uso del sitio web del instituto y resolver dudas generales
-        sobre navegación, acceso a información y funcionamiento de la plataforma.
-    </p>
-</section>
 
-<section class="cuerpo-style">
-    <h2>Cómo navegar en el sitio</h2>
+    {{>card titulo="Bienvenido al centro de ayuda" descripcion="Esta sección está diseñada para orientarte en el uso del sitio web del instituto y resolver dudas generales sobre navegación, acceso a información y funcionamiento de la plataforma." }}
+
+
+
+    {{#>card titulo="Cómo navegar en el sitio"}}
     <ul>
         <li>Utiliza el menú principal para acceder a las distintas secciones del sitio.</li>
         <li>Desplázate hacia abajo en cada página para ver todo el contenido disponible.</li>
         <li>Explora cada sección para encontrar información detallada sobre el instituto.</li>
     </ul>
-</section>
 
-<section class="cuerpo-style">
-    <h2>Problemas comunes</h2>
+    {{/card}}
+
+    {{#>card titulo="Problemas comunes"}}
 
     <h3>El sitio no carga correctamente</h3>
     <p>
@@ -52,32 +46,20 @@
     <p>
         Verifica que tu navegador tenga habilitado JavaScript y que no existan bloqueadores que afecten la visualización.
     </p>
-</section>
+    {{/card}}
 
-<section class="cuerpo-style">
-    <h2>Recomendaciones de uso</h2>
+    {{#>card titulo="Recomendaciones de uso"}}
+
     <ul>
         <li>Usa un navegador actualizado (Chrome, Firefox o Edge).</li>
         <li>Evita el uso de redes lentas para una mejor experiencia.</li>
         <li>Mantén tu dispositivo actualizado para evitar errores de compatibilidad.</li>
     </ul>
-</section>
+    {{/card}}
+{{>card titulo="Accesibilidad" descripcion="Este sitio está diseñado para ser accesible en computadoras, tablets y teléfonos móviles. Puedes ampliar el texto usando las opciones de tu navegador si lo necesitas." }}
 
-<section class="cuerpo-style">
-    <h2>Accesibilidad</h2>
-    <p>
-        Este sitio está diseñado para ser accesible en computadoras, tablets y teléfonos móviles.
-        Puedes ampliar el texto usando las opciones de tu navegador si lo necesitas.
-    </p>
-</section>
+{{>card titulo="Nota importante" descripcion="Este centro de ayuda no reemplaza los canales oficiales de comunicación del instituto, sino que sirve como guía rápida para el uso del sitio web." }}
 
-<section class="cuerpo-style">
-    <h2>Nota importante</h2>
-    <p>
-        Este centro de ayuda no reemplaza los canales oficiales de comunicación del instituto,
-        sino que sirve como guía rápida para el uso del sitio web.
-    </p>
-</section>
 
     {{>footer}}
 

@@ -1,0 +1,17 @@
+<div class="cuerpo-style">
+  <h2>{{titulo}}</h2>
+
+  {{#if subtitulo}}
+    <h3>{{subtitulo}}</h3>
+  {{/if}}
+
+  {{#if descripcion}}
+    <p>{{{descripcion}}}</p>
+  {{/if}}
+
+    {{#if @partial-block}}
+        {{> @partial-block}}
+
+    {{/if}}
+
+</div>

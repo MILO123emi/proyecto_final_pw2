@@ -14,14 +14,10 @@
 
     {{>nav}}
 
-    <div class="main-titulo">
-        <h2>Styling & Care</h2>
-        <p>Discover our exclusive care designed to highlight your natural beauty.</p>
-        
-    </div>
+    {{>heading titulo="Styling & Care" descripcion="Discover our exclusive care designed to highlight your natural beauty." }}
 
-    <section class="cuerpo-style">
-        <h2>Nail Services</h2>
+    {{#>card titulo="Nail Services"}} 
+
         <p>
            <ul>
                 <li><strong>Classic manicure: </strong>Basic hands and nails care including trimming, shaping, cuticle cleanup, and standard polish.</li>
@@ -35,10 +31,12 @@
                 <li><strong>Natural nail care and maintenance: </strong>Hydrating and strengthening treatments to promote healthy growth and keep natural nails strong.</li>
            </ul>
         </p>
-    </section>
+    {{/card}}
 
-        <section class="cuerpo-style">
-        <h2>Hair Services</h2>
+    {{#>card titulo="Hair Services"}}
+
+
+        
         <p>
            <ul>
                 <li><strong>Hair straightening / Flat ironing: </strong>Thermal styling service using a flat iron to achieve a smooth, sleek, and straight look.</li>
@@ -56,10 +54,9 @@
                 
            </ul>
         </p>
-    </section>
+        {{/card}}
 
-        <section class="cuerpo-style">
-        <h2>Other Beauty Services</h2>
+        {{#>card titulo="Other Beauty Services"}}
         <p>
            <ul>
                 <li><strong>Style consultation tailored to each individual: </strong>Professional advice to help select hair and nail choices that complement your lifestyle and features.</li>
@@ -68,8 +65,8 @@
 
            </ul>
         </p>
-    </section>
-
+        {{/card}}
+    
     {{>footer}}
 
     <script src="js/app.js"></script>
