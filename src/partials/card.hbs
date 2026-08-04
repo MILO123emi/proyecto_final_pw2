@@ -1,4 +1,5 @@
-<div class="cuerpo-style">
+<div class="{{#if class}}{{class}}{{else}}cuerpo-style{{/if}}">
+
   {{#if titulo}}
     <h2>{{titulo}}</h2>
   {{/if}}
@@ -10,10 +11,29 @@
   {{#if descripcion}}
     <p>{{{descripcion}}}</p>
   {{/if}}
+ {{#each items}}
 
+    
+    {{#if subtitulo}}
+      <h3>{{subtitulo}}</h3>
+    {{/if}}
+    {{#if descripcion}}
+      <p>{{{descripcion}}}</p>
+    {{/if}}
+
+  {{/each}}
+  
+    {{#if lista}}
+    <ul>
+      {{#each lista}}
+        <li>{{{this}}}</li>
+      {{/each}}
+    </ul>
+  {{/if}}
     {{#if @partial-block}}
         {{> @partial-block}}
 
+   
     {{/if}}
 
 </div>

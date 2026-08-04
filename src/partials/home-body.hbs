@@ -1,11 +1,8 @@
 <section class="home-section">
 
-    <div class="home-card">
-        <h2>Who Are We?</h2>
-        <p>
-            We are a beauty salon located in Cayitos, Utila, Islas de la Bahía, Honduras. As a solo business, every client receives personal attention in a friendly and relaxing environment, with services designed to help you look and feel your best.
-        </p>
-    </div>
+    {{>card class="home-card" titulo="Who Are We?" descripcion="We are a beauty salon located in Cayitos, Utila, Islas de la Bahía, Honduras. As a solo business, every client receives personal attention in a friendly and relaxing environment, with services designed to help you look and feel your best." }}
+
+
 
     <div class="home-card image-card">
         <picture>
@@ -26,45 +23,33 @@
         </picture>
     </div>
 
-    <div class="home-card">
-        <h2>Personalized Beauty</h2>
-        <p>
-            Every service is tailored to your style because everyone is different. Whether you're visiting for your hair or nails, the goal is to help you leave feeling confident and happy with your new look.
-        </p>
+    {{>card class="home-card" titulo="Personalized Beauty" descripcion="Every service is tailored to your style because everyone is different. Whether you're visiting for your hair or nails, the goal is to help you leave feeling confident and happy with your new look." }}
     </div>
 
 </section>
 
 <section class="home-stats">
 
-    <div class="stat-box">
-        <h3>Personal Care</h3>
-        <p>Friendly one-on-one service</p>
-    </div>
 
-    <div class="stat-box">
-        <h3>Beauty Services</h3>
-        <p>Hair and nail care with Caribbean style</p>
-    </div>
 
-    <div class="stat-box">
-        <h3>Relaxing Experience</h3>
-        <p>A welcoming place to feel your best</p>
-    </div>
+    {{>card class="stat-box" subtitulo="PersonalCare" descripcion="Firendly one-on-one service"}}
+
+
+    {{>card class="stat-box" titulo="Beauty Services" descripcion="Hair and nail care with Caribbean style"}}
+
+    
+    {{>card class="stat-box" titulo="Relaxing Experience" descripcion="A welcoming place to feel your best" }}
+    
 
 </section>
 
 <section class="home-section">
 
-    <div class="home-card">
-        <h2>Our Commitment</h2>
-        <p>
-            We are committed to providing quality beauty services with care, attention to detail, and a personal touch. Every appointment is an opportunity to help you look and feel your best.
-        </p>
-    </div>
+    {{>card class="home-card" titulo="Our Commitment" descripcion="We are committed to providing quality beauty services with care, attention to detail, and a personal touch. Every appointment is an opportunity to help you look and feel your best." }}
 
-    <div class="home-card">
-        <h2>What Makes Us Different</h2>
+
+    {{#>card class="home-card" titulo="What Makes Us Different"}}
+        
         <ul>
             <li>Personalized one-on-one service</li>
             <li>Attention to detail</li>
@@ -72,6 +57,6 @@
             <li>Relaxing atmosphere</li>
             <li>Friendly experience</li>
         </ul>
-    </div>
-
+    {{/card}}
+</section>
 </section>
